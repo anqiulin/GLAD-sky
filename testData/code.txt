@@ -1,0 +1,495 @@
+int main()
+{
+
+	// string keysFile = "map/data_cal/sub/cal_sub_keys_10_100.node";
+	// string graphFile = "./map/USA-road-d.CAL.gr";			//graph file
+	// const char *indexFile ="./map/data_cal/h2h/cal_sub.index";	//H2H index file
+	// const char *edgeFile ="./map/data_cal/h2h/cal_sub.edge";	//edge file(graph file same)
+
+	string keysFile = "map/data_cal/tol/Density8/cal_keys_10_100.node";
+	string graphFile = "map/data_cal/tol/USA-road-d.CAL.gr";			//graph file
+	const char *indexFile ="./map/data_cal/h2h/cal.index";	//H2H index file
+	const char *edgeFile ="./map/data_cal/tol/cal.edge";	//edge file(graph file same)
+
+	Graph g = Graph(graphFile);  
+	g.set_nodeKEYS_NodesBit(keysFile);
+	g.Init_H2H_Index(indexFile, edgeFile);
+
+	std::chrono::high_resolution_clock::time_point t1; //DAprune-K
+	std::chrono::high_resolution_clock::time_point t2;
+	std::chrono::duration<double> K_time_totol;
+
+	std::chrono::high_resolution_clock::time_point t3; //DAprune-Sky
+	std::chrono::high_resolution_clock::time_point t4;
+	std::chrono::duration<double> Sky_time_totol;
+
+	std::chrono::high_resolution_clock::time_point t5; //DAprune-Base
+	std::chrono::high_resolution_clock::time_point t6; 
+	std::chrono::duration<double> Base_time_totol;
+
+	std::chrono::high_resolution_clock::time_point t7; //DAprune-SkyPrune
+	std::chrono::high_resolution_clock::time_point t8;
+	std::chrono::duration<double> Skyprune_time_totol;
+
+	std::chrono::duration<double> time_span;
+	
+
+	//std::chrono::duration<double> GTree_time_totol;
+	
+	vector<int>querykey;
+	// string ss= "10,19,29,44,57,77,83,92";
+	 // string ss= "6,18,24,33,46,57,63,71,89,91";
+	 string ss= "14,35,54,77";
+	 // string ss= "4,22,34,56,61,79";
+	cout << "query keys:" << ss <<endl; 
+	strToVec(querykey,ss);	//trans
+
+	//int LB=g.ComputeStoptimeLB(querykey);
+	//cout << "LB:" << LB << endl;
+
+	fstream infile("testData/Cal_tol/query/query_1000_15e_30e.txt",ios::in);	// test file input ID1 and ID2
+
+/***************************************DArune-K************************************************/	
+	ofstream outfile_K("testData/Cal_tol/query_res/out_K/100_4_15e_30e_K.txt",ios::out);
+	// ofstream out_K("testData/Cal_tol/analysis_res/1000_10_0_15e_max.txt",ios::out);
+	outfile_K << "query keys:" << ss <<endl; 
+	int k = 30;  
+
+
+	vector<int> kResults_K; //路径距离
+	kResults_K.reserve(querykey.size());
+	kResults_K.clear();
+
+	vector<vector<int>> vkPath_K; //路径结果
+	vkPath_K.clear();
+
+	vector<int > kStoptimes_K; //停车次数
+	kStoptimes_K.reserve(querykey.size());
+	kStoptimes_K.clear();
+
+/***********************************************************************************************/
+
+/***************************************DArune-Sky************************************************/	
+	ofstream outfile_Sky("testData/Cal_tol/query_res/out_Sky/100_4_15e_30e_Sky.txt",ios::out);
+	// ofstream out_Sky("testData/Cal_tol/analysis_res/1000_10_0_15e_max.txt",ios::out);
+
+	outfile_Sky << "query keys:" << ss <<endl; 
+
+	vector<int> kResults_Sky; //路径距离
+	kResults_Sky.reserve(querykey.size());
+	kResults_Sky.clear();
+
+	vector<vector<int>> vkPath_Sky; //路径结果
+	vkPath_Sky.clear();
+
+	vector<int > kStoptimes_Sky; //停车次数
+	kStoptimes_Sky.reserve(querykey.size());
+	kStoptimes_Sky.clear();
+
+/***********************************************************************************************/
+
+/***************************************DArune-Base************************************************/	
+	ofstream outfile_Base("testData/Cal_tol/query_res/out_Base/100_4_15e_30e_Base.txt",ios::out);
+	// ofstream out_Base("testData/Cal_tol/analysis_res/1000_10_0_15e_max.txt",ios::out);
+
+	outfile_Base << "query keys:" << ss <<endl;  
+
+	vector<int> kResults_Base; //路径距离
+	kResults_Base.reserve(querykey.size());
+	kResults_Base.clear();
+
+	vector<vector<int>> vkPath_Base; //路径结果
+	vkPath_Base.clear();
+
+	vector<int > kStoptimes_Base; //停车次数
+	kStoptimes_Base.reserve(querykey.size());
+	kStoptimes_Base.clear();
+
+/***********************************************************************************************/
+
+/***************************************DArune-SkyPrune************************************************/	
+	ofstream outfile_Skyprune("testData/Cal_tol/query_res/out_Skyprune/100_4_15e_30e_Skyprune.txt",ios::out);
+	// ofstream out_SkyPrune("testData/Cal_tol/analysis_res/1000_10_0_15e_max.txt",ios::out);
+
+	outfile_Skyprune << "query keys:" << ss <<endl; 
+
+	vector<int> kResults_Skyprune; //路径距离
+	kResults_Skyprune.reserve(querykey.size());
+	kResults_Skyprune.clear();
+
+	vector<vector<int>> vkPath_Skyprune; //路径结果
+	vkPath_Skyprune.clear();
+
+	vector<int > kStoptimes_Skyprune; //停车次数
+	kStoptimes_Skyprune.reserve(querykey.size());
+	kStoptimes_Skyprune.clear();
+
+/***********************************************************************************************/
+
+	
+	ofstream outfile_res("testData/Cal_tol/result/Density8/result.txt",ios::app);
+	outfile_res << "keywords:100 querykey:4 Dis:15e_30e" << endl;
+	
+	int res = 0;
+	srand (time(NULL));
+	int ID1, ID2;
+	int num = 1000;
+	double radio = 0;
+
+
+/********************************************DAprune-K compare DAprune-Sky*************************************/ 
+	int num1_K_Sky = 0;
+	int num2_K_Sky = 0;
+	int num3_K_Sky = 0;
+	int num4_K_Sky = 0;
+	double K_Sky_radio_totol_A = 0;
+	double K_Sky_radio_totol_B = 0;
+/********************************************DAprune-K compare DAprune-Base*************************************/ 
+	int num1_K_Base = 0; //Same
+	int num2_K_Base = 0; //K good
+	int num3_K_Base = 0; //Base good
+	int num4_K_Base = 0; //About the same
+	double K_Base_radio_totol_A = 0;
+	double K_Base_radio_totol_B = 0;
+/********************************************DAprune-Base compare DAprune-Sky*************************************/ 
+	int num1_Base_Sky = 0;
+	int num2_Base_Sky = 0;
+	int num3_Base_Sky = 0;
+	int num4_Base_Sky = 0;
+	double Base_Sky_radio_totol_A = 0;
+	double Base_Sky_radio_totol_B = 0;
+/********************************************DAprune-Sky compare DAprune-Skyprune*************************************/ 
+	int num1_Sky_Skyprune = 0;
+	int num2_Sky_Skyprune = 0;
+	int num3_Sky_Skyprune = 0;
+	int num4_Sky_Skyprune = 0;
+	double Sky_Skyprune_radio_totol_A = 0;
+	double Sky_Skyprune_radio_totol_B = 0;
+/********************************************************************************************************************/ 
+
+
+	while(infile >> ID1 >> ID2 >> res){
+	srand (time(NULL));
+
+		//cout << "ID1:" << ID1 << " ID2:" << ID2 << " dist:" << res <<endl;
+/******************************************DAprune-K****************************************************/ 
+		outfile_K << "ID1:" << ID1 << " ID2:" << ID2 << " dist:" << res <<endl; 
+		kResults_K.clear();
+	    kStoptimes_K.clear();
+	    vkPath_K.clear();
+
+	    t1 = std::chrono::high_resolution_clock::now();
+		int size_K = g.DAPrune(ID1, ID2, k, querykey, kResults_K, vkPath_K ,kStoptimes_K);
+		t2 = std::chrono::high_resolution_clock::now();
+		time_span = std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1);
+		K_time_totol = K_time_totol + time_span;
+
+		outfile_K << "DAPrune-K Time:" << time_span.count() << endl;
+		int e_K=0;
+	    for(auto& d : kResults_K){
+
+	 	    outfile_K << d << ' ' <<kStoptimes_K[e_K]<< " : ";
+	 	    
+	 	    for(auto &p : vkPath_K[e_K++]){
+	 		    outfile_K << p << " ";
+	 		}
+
+	 	    outfile_K << endl;
+	 	    
+	    }
+	   
+	    outfile_K << endl;
+
+
+/******************************************DAprune-Sky****************************************************/ 
+		outfile_Sky << "ID1:" << ID1 << " ID2:" << ID2 << " dist:" << res <<endl; 
+		kResults_Sky.clear();
+	    kStoptimes_Sky.clear();
+	    vkPath_Sky.clear();
+
+	    t3 = std::chrono::high_resolution_clock::now();
+		int size_Sky = g.DAPrune_Sky(ID1, ID2, querykey, kResults_Sky, vkPath_Sky ,kStoptimes_Sky);
+		t4 = std::chrono::high_resolution_clock::now();
+		time_span = std::chrono::duration_cast<std::chrono::duration<double> >(t4 - t3);
+		Sky_time_totol = Sky_time_totol + time_span;
+
+		outfile_Sky << "DAprune-Sky Time:" << time_span.count() << endl;
+		int e_Sky=0;
+	    for(auto& d : kResults_Sky){
+
+	 	    outfile_Sky << d << ' ' <<kStoptimes_Sky[e_Sky]<< " : ";
+	 	    
+	 	    for(auto &p : vkPath_Sky[e_Sky++]){
+	 		    outfile_Sky << p << " ";
+	 		}
+
+	 	    outfile_Sky << endl;
+	 	    
+	    }
+	   
+	    outfile_Sky << endl;
+   
+/******************************************DAprune-Base****************************************************/ 
+		outfile_Base << "ID1:" << ID1 << " ID2:" << ID2 << " dist:" << res <<endl; 
+		kResults_Base.clear();
+	    kStoptimes_Base.clear();
+	    vkPath_Base.clear();
+
+	    t5 = std::chrono::high_resolution_clock::now();
+		int size_Base = g.DAPrune_base(ID1, ID2,  querykey, kResults_Base, vkPath_Base ,kStoptimes_Base);
+		t6 = std::chrono::high_resolution_clock::now();
+		time_span = std::chrono::duration_cast<std::chrono::duration<double> >(t6 - t5);
+		Base_time_totol = Base_time_totol + time_span;
+
+		outfile_Base << "DAprune-Base Time:" << time_span.count() << endl;
+		int e_Base=0;
+	    for(auto& d : kResults_Base){
+
+	 	    outfile_Base << d << ' ' <<kStoptimes_Base[e_Base]<< " : ";
+	 	    
+	 	    for(auto &p : vkPath_Base[e_Base++]){
+	 		    outfile_Base << p << " ";
+	 		}
+
+	 	    outfile_Base << endl;
+	 	    
+	    }
+	 	 
+	 	outfile_Base << endl;
+
+	  
+/******************************************DAprune-Skyprune****************************************************/ 
+		outfile_Skyprune << "ID1:" << ID1 << " ID2:" << ID2 << " dist:" << res <<endl; 
+		kResults_Skyprune.clear();
+	    kStoptimes_Skyprune.clear();
+	    vkPath_Skyprune.clear();
+
+	    t7 = std::chrono::high_resolution_clock::now();
+		int size_Skyprune = g.DAPrune_Skyprune(ID1, ID2, querykey, kResults_Skyprune, vkPath_Skyprune ,kStoptimes_Skyprune);
+		t8 = std::chrono::high_resolution_clock::now();
+		time_span = std::chrono::duration_cast<std::chrono::duration<double> >(t8 - t7);
+		Skyprune_time_totol = Skyprune_time_totol + time_span;
+
+		outfile_Skyprune << "DAprune-Skyprune Time:" << time_span.count() << endl;
+		int e_Skyprune=0;
+	    for(auto& d : kResults_Skyprune){
+
+	 	    outfile_Skyprune << d << ' ' <<kStoptimes_Skyprune[e_Skyprune]<< " : ";
+	 	    
+	 	    for(auto &p : vkPath_Skyprune[e_Skyprune++]){
+	 		    outfile_Skyprune << p << " ";
+	 		}
+
+	 	    outfile_Skyprune << endl;
+	 	    
+	    }
+
+	 	outfile_Skyprune << endl;
+
+/********************************************DAprune-K compare DAprune-Base*************************************/ 
+	    radio = 0;
+
+		int resnum2 = g.ResultQuality(kResults_K, kStoptimes_K, kResults_Base, kStoptimes_Base, radio);
+	  	
+	  	if(resnum2 == 0){
+	  		num1_K_Base++;
+	  	}
+	  	else if(resnum2 == 1){
+	  		num2_K_Base++;
+	  		K_Base_radio_totol_A += radio;
+	  	}
+	  	else if(resnum2 == 2){
+	  		num3_K_Base++;
+	  		K_Base_radio_totol_B += radio;
+
+	  	}
+	  	else
+	  	{
+	  		num4_K_Base++;
+	  	}
+	    
+/********************************************DAprune-K compare DAprune-Sky*************************************/ 
+	    radio = 0;
+
+	    int resnum1 = g.ResultQuality(kResults_K, kStoptimes_K, kResults_Sky, kStoptimes_Sky, radio);
+	  	
+	  	if(resnum1 == 0){
+	  		num1_K_Sky++;
+	  	}
+	  	else if(resnum1 == 1){
+	  		num2_K_Sky++;
+	  		K_Sky_radio_totol_A += radio;
+	  	}
+	  	else if(resnum1 == 2){
+	  		num3_K_Sky++;
+	  		K_Sky_radio_totol_B += radio;
+
+	  	}
+	  	else
+	  	{
+	  		num4_K_Sky++;
+	  	}
+/********************************************DAprune-Base compare DAprune-Sky*************************************/ 
+	  	radio = 0;
+
+	    int resnum3 = g.ResultQuality(kResults_Base, kStoptimes_Base, kResults_Sky, kStoptimes_Sky, radio);
+
+	    if(resnum3 == 0){
+	  		num1_Base_Sky++;
+	  	}
+	  	else if(resnum3 == 1){
+	  		num2_Base_Sky++;
+	  		Base_Sky_radio_totol_A += radio;
+	  	}
+	  	else if(resnum3 == 2){
+	  		num3_Base_Sky++;
+	  		Base_Sky_radio_totol_B += radio;
+
+	  	}
+	  	else
+	  	{
+	  		num4_Base_Sky++;
+	  	}
+/********************************************DAprune-Sky compare DAprune-Skyprune*************************************/ 
+	  	radio = 0;
+
+		int resnum4 = g.ResultQuality(kResults_Sky, kStoptimes_Sky, kResults_Skyprune, kStoptimes_Skyprune, radio);
+
+		if(resnum4 == 0){
+	  		num1_Sky_Skyprune++;
+	  	}
+	  	else if(resnum4 == 1){
+	  		num2_Sky_Skyprune++;
+	  		Sky_Skyprune_radio_totol_A += radio;
+	  	}
+	  	else if(resnum4 == 2){
+	  		num3_Sky_Skyprune++;
+	  		Sky_Skyprune_radio_totol_B += radio;
+
+	  	}
+	  	else
+	  	{
+	  		num4_Sky_Skyprune++;
+	  	}
+
+/*********************************************************************************************************************/ 
+
+	}
+		outfile_res << "DAPrune_K : totol time = "<<K_time_totol.count()<<"\t"<<"average time = "<<K_time_totol.count()/num<<endl;
+		
+		outfile_res << "DAPrune_Sky : totol time = "<<Sky_time_totol.count()<<"\t"<<"average time = "<<Sky_time_totol.count()/num<<endl;
+		
+		outfile_res << "DAPrune_Base : totol time = "<<Base_time_totol.count()<<"\t"<<"average time = "<<Base_time_totol.count()/num<<endl;
+		
+		outfile_res << "DAPrune_Skyprune : totol time = "<<Skyprune_time_totol.count()<<"\t"<<"average time = "<<Skyprune_time_totol.count()/num<<endl;
+		
+	    
+	    
+
+/********************************************DAprune-K compare DAprune-Sky*************************************/ 
+
+	    
+
+		outfile_res << "The same result: " << num1_K_Sky << "\tradio: " << (double)(num1_K_Sky *1.0/num*1.0)*100.0 <<"%" <<endl;
+		outfile_res << "DAprune-K good: " << num2_K_Sky  << "\tradio: " << (double)(num2_K_Sky *1.0/num*1.0)*100.0 
+					<< "%" << "\tAverage good radio:" << double(K_Sky_radio_totol_A/num2_K_Sky*1.0)*100.0 << "%" << endl;
+		outfile_res << "DAprune-Sky good: " << num3_K_Sky  << "\tradio: " << (double)(num3_K_Sky *1.0/num*1.0)*100.0 
+					<< "%" << "\tAverage good radio:" << double(K_Sky_radio_totol_B/num3_K_Sky*1.0)*100.0 << "%" << endl;
+		outfile_res << "About the same " << num4_K_Sky  << "\tradio: " << (double)(num4_K_Sky *1.0/num*1.0)*100.0 <<"%" <<endl;
+		outfile_res <<endl;
+
+/********************************************DAprune-K compare DAprune-Base*************************************/ 
+
+		outfile_res << "The same result: " << num1_K_Base << "\tradio: " << (double)(num1_K_Base *1.0/num*1.0)*100.0 <<"%" <<endl;
+		outfile_res << "DAprune-K good: " << num2_K_Base  << "\tradio: " << (double)(num2_K_Base *1.0/num*1.0)*100.0 
+					<< "%" << "\tAverage good radio:" << double(K_Base_radio_totol_A/num2_K_Base*1.0)*100.0 << "%" << endl;
+		outfile_res << "DAprune-Base good: " << num3_K_Base  << "\tradio: " << (double)(num3_K_Base *1.0/num*1.0)*100.0 
+					<< "%" << "\tAverage good radio:" << double(K_Base_radio_totol_B/num3_K_Base*1.0)*100.0 << "%" << endl;
+		outfile_res << "About the same " << num4_K_Base  << "\tradio: " << (double)(num4_K_Base *1.0/num*1.0)*100.0 <<"%" <<endl;
+		outfile_res <<endl;
+
+/********************************************DAprune-Base compare DAprune-Sky*************************************/ 
+
+	    outfile_res << "The same result: " << num1_Base_Sky << "\tradio: " << (double)(num1_Base_Sky *1.0/num*1.0)*100.0 <<"%" <<endl;
+		outfile_res << "DAprune-Base good: " << num2_Base_Sky  << "\tradio: " << (double)(num2_Base_Sky *1.0/num*1.0)*100.0 
+					<< "%" << "\tAverage good radio:" << double(Base_Sky_radio_totol_A/num2_Base_Sky*1.0)*100.0 << "%" << endl;
+		outfile_res << "DAprune-Sky good: " << num3_Base_Sky  << "\tradio: " << (double)(num3_Base_Sky *1.0/num*1.0)*100.0 
+					<< "%" << "\tAverage good radio:" << double(Base_Sky_radio_totol_B/num3_Base_Sky*1.0)*100.0 << "%" << endl;
+		outfile_res << "About the same " << num4_Base_Sky  << "\tradio: " << (double)(num4_Base_Sky *1.0/num*1.0)*100.0 <<"%" <<endl;
+		outfile_res <<endl;
+
+/********************************************DAprune-Sky compare DAprune-Skyprune*************************************/ 
+
+		outfile_res << "The same result: " << num1_Sky_Skyprune << "\tradio: " << (double)(num1_Sky_Skyprune *1.0/num*1.0)*100.0 <<"%" <<endl;
+		outfile_res << "DAprune-Sky good: " << num2_Sky_Skyprune  << "\tradio: " << (double)(num2_Sky_Skyprune *1.0/num*1.0)*100.0 
+					<< "%" << "\tAverage good radio:" << double(Sky_Skyprune_radio_totol_A/num2_Sky_Skyprune*1.0)*100.0 << "%" << endl;
+		outfile_res << "DAprune-SkyPrune good: " << num3_Sky_Skyprune  << "\tradio: " << (double)(num3_Sky_Skyprune *1.0/num*1.0)*100.0 
+					<< "%" << "\tAverage good radio:" << double(Sky_Skyprune_radio_totol_B/num3_Sky_Skyprune*1.0)*100.0 << "%" << endl;
+		outfile_res << "About the same " << num4_Sky_Skyprune  << "\tradio: " << (double)(num4_Sky_Skyprune *1.0/num*1.0)*100.0 <<"%" <<endl;
+		outfile_res <<endl;
+	    
+/********************************************************************************************************************/ 
+
+
+		cout << "DAPrune_K : totol time = "<<K_time_totol.count()<<"\t"<<"average time = "<<K_time_totol.count()/num<<endl;
+		outfile_K << "DAPrune_K : totol time = "<<K_time_totol.count()<<"\t"<<"average time = "<<K_time_totol.count()/num<<endl;
+		outfile_K.close();
+		
+		cout << "DAPrune_Sky : totol time = "<<Sky_time_totol.count()<<"\t"<<"average time = "<<Sky_time_totol.count()/num<<endl;
+		outfile_Sky << "DAPrune_Sky : totol time = "<<Sky_time_totol.count()<<"\t"<<"average time = "<<Sky_time_totol.count()/num<<endl;
+		outfile_Sky.close();
+
+		cout << "DAPrune_Base : totol time = "<<Base_time_totol.count()<<"\t"<<"average time = "<<Base_time_totol.count()/num<<endl;
+		outfile_Base << "DAPrune_Base : totol time = "<<Base_time_totol.count()<<"\t"<<"average time = "<<Base_time_totol.count()/num<<endl;
+		outfile_Base.close();
+
+		cout << "DAPrune_Skyprune : totol time = "<<Skyprune_time_totol.count()<<"\t"<<"average time = "<<Skyprune_time_totol.count()/num<<endl;
+		outfile_Skyprune << "DAPrune_Skyprune : totol time = "<<Skyprune_time_totol.count()<<"\t"<<"average time = "<<Skyprune_time_totol.count()/num<<endl;
+		outfile_Skyprune.close();
+
+		outfile_res.close();
+		infile.close(); 
+
+	return 0;
+}
+
+minx = -108999980
+maxx = -102000005
+miny = 37000000
+maxy = 40999993
+xLength = 6.21487e+06
+yLength = 4.44779e+06
+colLength = 1126
+rowLength = 899
+decimeter = 1000
+colSize = 6217
+rowSize = 4450
+numNode = 27665650
+
+edge.size = 43386 
+minx = -124389343
+maxx = -114294258
+miny = 32541302
+maxy = 42017231
+xLength = 9.45936e+06
+yLength = 1.05368e+07
+colLength = 1067
+rowLength = 899
+decimeter = 1000
+colSize = 9462
+rowSize = 10541
+numNode = 99738942
+
+edge.size = 733846 
+minx = -74499998
+maxx = -73500016
+miny = 40300009
+maxy = 41299997
+xLength = 848029
+yLength = 1.11194e+06
+colLength = 1179
+rowLength = 899
+decimeter = 1000
+colSize = 849
+rowSize = 1113
+numNode = 944937

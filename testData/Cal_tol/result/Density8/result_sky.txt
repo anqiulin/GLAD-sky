@@ -1,0 +1,32 @@
+
+
+DAPrune_Sky : totol time = 31.9242	average time = 0.0319242
+DAprune-Sky candidate： 202
+keywords:3% querykey:4-{10,16,23,32}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 261.166	average time = 0.261166
+DAprune-Sky candidate： 1927
+keywords:3% querykey:6-{8,18,24,17,28,26}  Dis:10~20%
+---------------------------------------------
+
+
+
+
+
+
+
+DAPrune_Sky : totol time = 1737.47	average time = 1.73747
+DAprune-Sky candidate： 13258
+keywords:3% querykey:8-{7,10,11,24,26,31,38,45}  Dis:10~20%
+---------------------------------------------
+
+
+
+
+DAPrune_Sky : totol time = 5134.27	average time = 5.13427
+DAprune-Sky candidate： 36963
+keywords:3% querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:10~20%
+---------------------------------------------
+

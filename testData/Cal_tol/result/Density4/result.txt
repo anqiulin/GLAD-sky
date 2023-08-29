@@ -1,0 +1,150 @@
+
+keywords:100 querykey:8-{10,19,29,44,57,77,83,92}  Dis:0_15e
+DAPrune_K : totol time = 41.578	average time = 0.041578
+DAPrune_Sky : totol time = 41.0468	average time = 0.0410468
+DAPrune_Skyprune : totol time = 36.9698	average time = 0.0369698
+The same result: 658	radio: 65.8%
+DAprune-K good: 121	radio: 12.1%	Average good radio:85.427%
+DAprune-Sky good: 210	radio: 21%	Average good radio:93.6032%
+About the same 11	radio: 1.1%
+
+The same result: 1000	radio: 100%
+DAprune-Sky good: 0	radio: 0%	Average good radio:-nan%
+DAprune-SkyPrune good: 0	radio: 0%	Average good radio:-nan%
+About the same 0	radio: 0%
+
+*************************************
+keywords:100 querykey:10-{6,18,24,33,46,57,63,71,89,91}  Dis:0_15e
+DAPrune_K : totol time = 236.985	average time = 0.236985
+DAPrune_Sky : totol time = 233.862	average time = 0.233862
+DAPrune_Skyprune : totol time = 188.264	average time = 0.188264
+The same result: 580	radio: 58%
+DAprune-K good: 178	radio: 17.8%	Average good radio:90.7303%
+DAprune-Sky good: 227	radio: 22.7%	Average good radio:89.2805%
+About the same 15	radio: 1.5%
+
+The same result: 994	radio: 99.4%
+DAprune-Sky good: 4	radio: 0.4%	Average good radio:100%
+DAprune-SkyPrune good: 2	radio: 0.2%	Average good radio:100%
+About the same 0	radio: 0%
+
+*************************************
+keywords:100 querykey:6-{4,22,34,56,61,79}  Dis:0_15e
+DAPrune_K : totol time = 14.1778	average time = 0.0141778
+DAPrune_Sky : totol time = 14.065	average time = 0.014065
+DAPrune_Skyprune : totol time = 13.2727	average time = 0.0132727
+The same result: 823	radio: 82.3%
+DAprune-K good: 52	radio: 5.2%	Average good radio:92.3077%
+DAprune-Sky good: 125	radio: 12.5%	Average good radio:92.4%
+About the same 0	radio: 0%
+
+The same result: 1000	radio: 100%
+DAprune-Sky good: 0	radio: 0%	Average good radio:-nan%
+DAprune-SkyPrune good: 0	radio: 0%	Average good radio:-nan%
+About the same 0	radio: 0%
+
+*************************************
+keywords:100 querykey:4-{44,58,69,91}  Dis:0_15e
+DAPrune_K : totol time = 6.30963	average time = 0.00630963
+DAPrune_Sky : totol time = 6.26602	average time = 0.00626602
+DAPrune_Skyprune : totol time = 6.25188	average time = 0.00625188
+The same result: 886	radio: 88.6%
+DAprune-K good: 43	radio: 4.3%	Average good radio:97.6744%
+DAprune-Sky good: 71	radio: 7.1%	Average good radio:96.4789%
+About the same 0	radio: 0%
+
+The same result: 1000	radio: 100%
+DAprune-Sky good: 0	radio: 0%	Average good radio:-nan%
+DAprune-SkyPrune good: 0	radio: 0%	Average good radio:-nan%
+About the same 0	radio: 0%
+
+*************************************
+keywords:100 querykey:2-{28,66}  Dis:0_15e
+DAPrune_K : totol time = 5.07467	average time = 0.00507467
+DAPrune_Sky : totol time = 5.09475	average time = 0.00509475
+DAPrune_Skyprune : totol time = 5.04822	average time = 0.00504822
+The same result: 980	radio: 98%
+DAprune-K good: 5	radio: 0.5%	Average good radio:100%
+DAprune-Sky good: 15	radio: 1.5%	Average good radio:100%
+About the same 0	radio: 0%
+
+The same result: 1000	radio: 100%
+DAprune-Sky good: 0	radio: 0%	Average good radio:-nan%
+DAprune-SkyPrune good: 0	radio: 0%	Average good radio:-nan%
+About the same 0	radio: 0%
+
+*************************************
+keywords:200 querykey:2-{81,153}  Dis:0_15e
+DAPrune_K : totol time = 4.94062	average time = 0.00494062
+DAPrune_Sky : totol time = 4.93749	average time = 0.00493749
+DAPrune_Skyprune : totol time = 4.92109	average time = 0.00492109
+The same result: 1000	radio: 100%
+DAprune-K good: 0	radio: 0%	Average good radio:-nan%
+DAprune-Sky good: 0	radio: 0%	Average good radio:-nan%
+About the same 0	radio: 0%
+
+The same result: 1000	radio: 100%
+DAprune-Sky good: 0	radio: 0%	Average good radio:-nan%
+DAprune-SkyPrune good: 0	radio: 0%	Average good radio:-nan%
+About the same 0	radio: 0%
+
+*************************************
+keywords:200 querykey:4-{34,65,121,169}  Dis:0_15e
+DAPrune_K : totol time = 6.37184	average time = 0.00637184
+DAPrune_Sky : totol time = 6.3706	average time = 0.0063706
+DAPrune_Skyprune : totol time = 6.17491	average time = 0.00617491
+The same result: 905	radio: 90.5%
+DAprune-K good: 45	radio: 4.5%	Average good radio:100%
+DAprune-Sky good: 50	radio: 5%	Average good radio:100%
+About the same 0	radio: 0%
+
+The same result: 1000	radio: 100%
+DAprune-Sky good: 0	radio: 0%	Average good radio:-nan%
+DAprune-SkyPrune good: 0	radio: 0%	Average good radio:-nan%
+About the same 0	radio: 0%
+
+*************************************
+keywords:200 querykey:6-{49,71,99,135,147,189}  Dis:0_15e
+DAPrune_K : totol time = 12.2231	average time = 0.0122231
+DAPrune_Sky : totol time = 12.168	average time = 0.012168
+DAPrune_Skyprune : totol time = 10.6943	average time = 0.0106943
+The same result: 738	radio: 73.8%
+DAprune-K good: 129	radio: 12.9%	Average good radio:89.5349%
+DAprune-Sky good: 130	radio: 13%	Average good radio:95.7692%
+About the same 3	radio: 0.3%
+
+The same result: 1000	radio: 100%
+DAprune-Sky good: 0	radio: 0%	Average good radio:-nan%
+DAprune-SkyPrune good: 0	radio: 0%	Average good radio:-nan%
+About the same 0	radio: 0%
+
+*************************************
+keywords:200 querykey:8-{17,29,58,77,83,101,140,171}  Dis:0_15e
+DAPrune_K : totol time = 42.2744	average time = 0.0422744
+DAPrune_Sky : totol time = 42.0439	average time = 0.0420439
+DAPrune_Skyprune : totol time = 35.3685	average time = 0.0353685
+The same result: 652	radio: 65.2%
+DAprune-K good: 149	radio: 14.9%	Average good radio:98.0984%
+DAprune-Sky good: 192	radio: 19.2%	Average good radio:96.3542%
+About the same 7	radio: 0.7%
+
+The same result: 1000	radio: 100%
+DAprune-Sky good: 0	radio: 0%	Average good radio:-nan%
+DAprune-SkyPrune good: 0	radio: 0%	Average good radio:-nan%
+About the same 0	radio: 0%
+
+*************************************
+keywords:200 querykey:10-{23,39,56,71,88,109,119,137,150,191}  Dis:0_15e
+DAPrune_K : totol time = 203.386	average time = 0.203386
+DAPrune_Sky : totol time = 201.075	average time = 0.201075
+DAPrune_Skyprune : totol time = 131.976	average time = 0.131976
+The same result: 592	radio: 59.2%
+DAprune-K good: 148	radio: 14.8%	Average good radio:92.5676%
+DAprune-Sky good: 256	radio: 25.6%	Average good radio:93.6523%
+About the same 4	radio: 0.4%
+
+The same result: 959	radio: 95.9%
+DAprune-Sky good: 38	radio: 3.8%	Average good radio:63.1579%
+DAprune-SkyPrune good: 3	radio: 0.3%	Average good radio:100%
+About the same 0	radio: 0%
+

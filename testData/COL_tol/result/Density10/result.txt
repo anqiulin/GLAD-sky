@@ -1,0 +1,12 @@
+*************************************
+keywords:10% querykey:2-{999,1530}  Dis:0~10%
+*************************************
+keywords:10% querykey:4-{561,973,1530,1876}  Dis:0~10%
+DAPrune_Sky : totol time = 132.388	average time = 0.132388
+DAPrune_Skyprune : totol time = 129.558	average time = 0.129558
+DAprune-Sky candidate： 5 DAprune-SkyPrune candidate： 1
+
+DAPrune_Sky : totol time = 139.178	average time = 0.139178
+DAPrune_Skyprune : totol time = 131.328	average time = 0.131328
+DAprune-Sky candidate： 29 DAprune-SkyPrune candidate： 5
+

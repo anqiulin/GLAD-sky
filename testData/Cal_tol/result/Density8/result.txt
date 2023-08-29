@@ -1,0 +1,584 @@
+DAPrune_Sky : totol time = 3.97418	average time = 0.00397418
+DAPrune_Skyprune : totol time = 3.71214	average time = 0.00371214
+keywords:5% querykey:2-{28,66}  Dis:10~20%
+---------------------------------------------
+DAprune-Sky candidate： 11 DAprune-SkyPrune candidate： 3
+
+
+DAPrune_Sky : totol time = 6.63015	average time = 0.00663015
+DAPrune_Skyprune : totol time = 6.26791	average time = 0.00626791
+DAprune-Sky candidate： 36 DAprune-SkyPrune candidate： 20
+keywords:5% querykey:3-{6,24,58}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 13.4904	average time = 0.0134904
+DAPrune_Skyprune : totol time = 12.2875	average time = 0.0122875
+DAprune-Sky candidate： 122 DAprune-SkyPrune candidate： 63
+keywords:5% querykey:4-{44,58,69,81}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 38.389	average time = 0.038389
+DAPrune_Skyprune : totol time = 28.9149	average time = 0.0289149
+DAprune-Sky candidate： 365 DAprune-SkyPrune candidate： 135
+keywords:5% querykey:5-{19,34,51,69,77}  Dis:10~20%
+---------------------------------------------
+
+DAPrune_Sky : totol time = 109.039	average time = 0.109039
+DAPrune_Skyprune : totol time = 70.8675	average time = 0.0708675
+DAprune-Sky candidate： 1154 DAprune-SkyPrune candidate： 375
+keywords:5% querykey:6-{4,22,34,56,61,79}  Dis:10~20%
+---------------------------------------------
+
+DAPrune_Sky : totol time = 233.368	average time = 0.233368
+DAPrune_Skyprune : totol time = 135.857	average time = 0.135857
+DAprune-Sky candidate： 2399 DAprune-SkyPrune candidate： 698
+keywords:5% querykey:7-{4,22,34,56,59,61,79}  Dis:10~20%
+---------------------------------------------
+
+DAPrune_Sky : totol time = 382.155	average time = 0.382155
+DAPrune_Skyprune : totol time = 244.88	average time = 0.24488
+DAprune-Sky candidate： 3548 DAprune-SkyPrune candidate： 1219
+keywords:5% querykey:8-{7,10,19,29,44,57,77,83}  Dis:10~20%
+---------------------------------------------
+
+DAPrune_Sky : totol time = 552.722	average time = 0.552722
+DAPrune_Skyprune : totol time = 405.82	average time = 0.40582
+DAprune-Sky candidate： 4828 DAprune-SkyPrune candidate： 1885
+keywords:5% querykey:9-{7,10,19,29,44,57,66,77,83}  Dis:10~20%
+---------------------------------------------
+
+DAPrune_Sky : totol time = 80.2544	average time = 0.802544
+DAPrune_Skyprune : totol time = 62.7391	average time = 0.627391
+DAprune-Sky candidate： 6360 DAprune-SkyPrune candidate： 2505
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.528892	average time = 0.528892
+DAPrune_Skyprune : totol time = 0.666912	average time = 0.666912
+DAprune-Sky candidate： 4191 DAprune-SkyPrune candidate： 3348
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.531739	average time = 0.531739
+DAPrune_Skyprune : totol time = 0.672082	average time = 0.672082
+DAprune-Sky candidate： 4191 DAprune-SkyPrune candidate： 3348
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.542764	average time = 0.542764
+DAPrune_Skyprune : totol time = 0.706402	average time = 0.706402
+DAprune-Sky candidate： 4191 DAprune-SkyPrune candidate： 3348
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.530777	average time = 0.530777
+DAPrune_Skyprune : totol time = 0.667104	average time = 0.667104
+DAprune-Sky candidate： 4191 DAprune-SkyPrune candidate： 3348
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.686471	average time = 0.686471
+DAPrune_Skyprune : totol time = 0.287263	average time = 0.287263
+DAprune-Sky candidate： 4176 DAprune-SkyPrune candidate： 1141
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.51795	average time = 0.51795
+DAPrune_Skyprune : totol time = 0.213326	average time = 0.213326
+DAprune-Sky candidate： 4367 DAprune-SkyPrune candidate： 999
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.140723	average time = 0.140723
+DAPrune_Skyprune : totol time = 0.107622	average time = 0.107622
+DAprune-Sky candidate： 1156 DAprune-SkyPrune candidate： 557
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.0395716	average time = 0.0395716
+DAPrune_Skyprune : totol time = 0.0336766	average time = 0.0336766
+DAprune-Sky candidate： 326 DAprune-SkyPrune candidate： 194
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.0207995	average time = 0.0207995
+DAPrune_Skyprune : totol time = 0.0169857	average time = 0.0169857
+DAprune-Sky candidate： 174 DAprune-SkyPrune candidate： 102
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.00848588	average time = 0.00848588
+DAPrune_Skyprune : totol time = 0.00745005	average time = 0.00745005
+DAprune-Sky candidate： 41 DAprune-SkyPrune candidate： 41
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.00657531	average time = 0.00657531
+DAPrune_Skyprune : totol time = 0.00546006	average time = 0.00546006
+DAprune-Sky candidate： 12 DAprune-SkyPrune candidate： 9
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.00574316	average time = 0.00574316
+DAPrune_Skyprune : totol time = 0.00480423	average time = 0.00480423
+DAprune-Sky candidate： 12 DAprune-SkyPrune candidate： 4
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.00605167	average time = 0.00605167
+DAPrune_Skyprune : totol time = 0.00504238	average time = 0.00504238
+DAprune-Sky candidate： 12 DAprune-SkyPrune candidate： 4
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.00568964	average time = 0.00568964
+DAPrune_Skyprune : totol time = 0.00458247	average time = 0.00458247
+DAprune-Sky candidate： 12 DAprune-SkyPrune candidate： 4
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.00643383	average time = 0.00643383
+DAPrune_Skyprune : totol time = 0.0054789	average time = 0.0054789
+DAprune-Sky candidate： 12 DAprune-SkyPrune candidate： 9
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.00816018	average time = 0.00816018
+DAPrune_Skyprune : totol time = 0.00735837	average time = 0.00735837
+DAprune-Sky candidate： 41 DAprune-SkyPrune candidate： 41
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.0400378	average time = 0.0400378
+DAPrune_Skyprune : totol time = 0.0343782	average time = 0.0343782
+DAprune-Sky candidate： 326 DAprune-SkyPrune candidate： 194
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.0204171	average time = 0.0204171
+DAPrune_Skyprune : totol time = 0.0168666	average time = 0.0168666
+DAprune-Sky candidate： 174 DAprune-SkyPrune candidate： 102
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.132465	average time = 0.132465
+DAPrune_Skyprune : totol time = 0.0980554	average time = 0.0980554
+DAprune-Sky candidate： 1156 DAprune-SkyPrune candidate： 557
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.554389	average time = 0.554389
+DAPrune_Skyprune : totol time = 0.204873	average time = 0.204873
+DAprune-Sky candidate： 4367 DAprune-SkyPrune candidate： 999
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.671695	average time = 0.671695
+DAPrune_Skyprune : totol time = 0.299585	average time = 0.299585
+DAprune-Sky candidate： 4176 DAprune-SkyPrune candidate： 1141
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.558773	average time = 0.558773
+DAPrune_Skyprune : totol time = 0.729146	average time = 0.729146
+DAprune-Sky candidate： 4191 DAprune-SkyPrune candidate： 3348
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.521383	average time = 0.521383
+DAPrune_Skyprune : totol time = 0.665769	average time = 0.665769
+DAprune-Sky candidate： 4191 DAprune-SkyPrune candidate： 3348
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+
+
+DAPrune_Sky : totol time = 0.521678	average time = 0.521678
+DAPrune_Skyprune : totol time = 0.671291	average time = 0.671291
+DAprune-Sky candidate： 4191 DAprune-SkyPrune candidate： 3348
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+
+
+
+
+DAPrune_Sky : totol time = 0.602102	average time = 0.602102
+DAPrune_Skyprune : totol time = 0.528666	average time = 0.528666
+DAprune-Sky candidate： 4191 DAprune-SkyPrune candidate： 1861
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.520802	average time = 0.520802
+DAPrune_Skyprune : totol time = 0.487037	average time = 0.487037
+DAprune-Sky candidate： 4191 DAprune-SkyPrune candidate： 1861
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 0.654033	average time = 0.654033
+DAPrune_Skyprune : totol time = 0.0555795	average time = 0.0555795
+DAprune-Sky candidate： 16284 DAprune-SkyPrune candidate： 613
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+
+DAPrune_Sky : totol time = 3.54795	average time = 0.354795
+DAPrune_Skyprune : totol time = 4.0335	average time = 0.40335
+DAprune-Sky candidate： 4258 DAprune-SkyPrune candidate： 1559
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 3.5231	average time = 0.35231
+DAPrune_Skyprune : totol time = 4.03972	average time = 0.403972
+DAprune-Sky candidate： 4258 DAprune-SkyPrune candidate： 1559
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+DAPrune_Sky : totol time = 369.876	average time = 0.369876
+DAPrune_Skyprune : totol time = 138.99	average time = 0.13899
+DAprune-Sky candidate： 3548 DAprune-SkyPrune candidate： 869
+keywords:5% querykey:8-{7,10,19,29,44,57,77,83}  Dis:10~20%
+---------------------------------------------
+
+DAPrune_Sky : totol time = 245.544	average time = 0.245544
+DAPrune_Skyprune : totol time = 77.7138	average time = 0.0777138
+DAprune-Sky candidate： 2399 DAprune-SkyPrune candidate： 424
+keywords:5% querykey:7-{4,22,34,56,59,61,79}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Sky : totol time = 541.264	average time = 0.541264
+DAPrune_Skyprune : totol time = 229.296	average time = 0.229296
+DAprune-Sky candidate： 4828 DAprune-SkyPrune candidate： 1385
+keywords:5% querykey:9-{7,10,19,29,44,57,66,77,83}  Dis:10~20%
+---------------------------------------------
+
+DAPrune_Sky : totol time = 155.532	average time = 0.864066
+DAPrune_Skyprune : totol time = 68.4532	average time = 0.380296
+DAprune-Sky candidate： 6806 DAprune-SkyPrune candidate： 2010
+keywords:5% querykey:10-{6,18,24,33,46,57,63,71,74,82}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 3.72803	average time = 0.00372803
+ DAprune-SkyPrune candidate： 1
+keywords:5% querykey:2-{28,66}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 8.89812	average time = 0.00889812
+ DAprune-SkyPrune candidate： 36
+keywords:5% querykey:4-{44,58,69,81}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 41.4914	average time = 0.0414914
+ DAprune-SkyPrune candidate： 243
+keywords:5% querykey:6-{4,22,34,56,61,79}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 2.81537	average time = 0.00281537
+ DAprune-SkyPrune candidate： 5
+keywords:3% querykey:2-{28,33}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 7.67363	average time = 0.00767363
+ DAprune-SkyPrune candidate： 54
+keywords:3% querykey:4-{14,23,35,46}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 37.2641	average time = 0.0372641
+ DAprune-SkyPrune candidate： 352
+keywords:3% querykey:6-{4,22,34,13,27,49}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 162.61	average time = 0.16261
+ DAprune-SkyPrune candidate： 1661
+keywords:3% querykey:8-{7,10,19,29,44,22,16,38}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 547.199	average time = 0.547199
+ DAprune-SkyPrune candidate： 5300
+keywords:3% querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 9.09652	average time = 0.00909652
+ DAprune-SkyPrune candidate： 61
+keywords:3% querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 34.9492	average time = 0.0349492
+ DAprune-SkyPrune candidate： 312
+keywords:3% querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:10~20%
+---------------------------------------------
+
+
+
+DAPrune_Skyprune : totol time = 3.01232	average time = 0.00301232
+ DAprune-SkyPrune candidate： 5
+keywords:3% querykey:2-{28,33}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 8.4685	average time = 0.0084685
+ DAprune-SkyPrune candidate： 61
+keywords:3% querykey:4-{10,16,23,32}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 35.2975	average time = 0.0352975
+ DAprune-SkyPrune candidate： 312
+keywords:3% querykey:6-{8,18,24,17,28,26}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 153.092	average time = 0.153092
+ DAprune-SkyPrune candidate： 1545
+keywords:3% querykey:8-{7,10,11,24,26,31,38,45}  Dis:10~20%
+---------------------------------------------
+
+
+DAPrune_Skyprune : totol time = 544.585	average time = 0.544585
+ DAprune-SkyPrune candidate： 5300
+keywords:3% querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:10~20%
+---------------------------------------------
+
+
+
+DAPrune_Sky : totol time = 6.62516	average time = 0.00662516
+DAprune-Sky candidate： 13
+keywords:3% querykey:6-{391,501,516,222,269,393}  Dis:0~10%
+---------------------------------------------
+
+GLAD : totol time = 2.20445	average time = 0.00220445
+keywords:3%  querykey:10-{45,89,145,169,258,290,358,402,479,587}  Dis:10~20% Path generation: Rand
+---------------------------------------
+
+GLAD : totol time = 2.29317	average time = 0.00229317
+keywords:3%  querykey:10-{45,89,145,169,258,290,358,402,479,587}  Dis:10~20% Path generation: Rand
+---------------------------------------
+
+GLAD : totol time = 1.15068	average time = 0.00115068
+keywords:3%  querykey:10-{45,89,145,169,258,290,358,402,479,587}  Dis:10~20% Path generation: Rand
+---------------------------------------
+
+GLAD : totol time = 1.91986	average time = 0.00191986
+keywords:3%  querykey:2-{28,33}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 1.99167	average time = 0.00199167
+keywords:3%  querykey:2-{28,33}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 2.77123	average time = 0.00277123
+keywords:3%  querykey:4-{10,16,23,32}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 3.15707	average time = 0.00315707
+keywords:3%  querykey:6-{8,18,24,17,28,26}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 3.97966	average time = 0.00397966
+keywords:3%  querykey:8-{7,10,11,24,26,31,38,45}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 4.92428	average time = 0.00492428
+keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 1.54013	average time = 0.00154013
+cal keywords:3%  querykey:2-{28,33}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 2.14661	average time = 0.00214661
+cal keywords:3%  querykey:4-{10,16,23,32}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 2.43506	average time = 0.00243506
+cal keywords:3%  querykey:6-{8,18,24,17,28,26}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 3.45613	average time = 0.00345613
+cal keywords:3%  querykey:8-{7,10,11,24,26,31,38,45}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 11.8169	average time = 0.0118169
+cal keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 12.0917	average time = 0.0120917
+cal keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 7.15917	average time = 0.00715917
+COL keywords:3%  querykey:2-{28,33}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 6.97094	average time = 0.00697094
+COL keywords:3%  querykey:2-{28,33}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 13.87	average time = 0.01387
+COL keywords:3%  querykey:4-{10,16,23,32}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 15.0767	average time = 0.0150767
+COL keywords:3%  querykey:6-{8,18,24,17,28,26}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 19.5338	average time = 0.0195338
+COL keywords:3%  querykey:8-{7,10,11,24,26,31,38,45}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 24.7667	average time = 0.0247667
+COL keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 27.0805	average time = 0.0270805
+COL keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 19.9361	average time = 0.0199361
+COL keywords:3%  querykey:8-{7,10,11,24,26,31,38,45}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 7.9126	average time = 0.0079126
+COL keywords:3%  querykey:2-{28,33}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 13.2893	average time = 0.0132893
+COL keywords:3%  querykey:4-{10,16,23,32}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 16.3347	average time = 0.0163347
+COL keywords:3%  querykey:6-{8,18,24,17,28,26}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 20.1936	average time = 0.0201936
+COL keywords:3%  querykey:8-{7,10,11,24,26,31,38,45}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 26.4727	average time = 0.0264727
+COL keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 28.1528	average time = 0.0281528
+COL keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 28.2489	average time = 0.0282489
+COL keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 25.1002	average time = 0.0251002
+COL keywords:3%  querykey:8-{7,10,11,24,26,31,38,45}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 17.7702	average time = 0.0177702
+COL keywords:3%  querykey:6-{8,18,24,17,28,26}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 15.77	average time = 0.01577
+COL keywords:3%  querykey:4-{10,16,23,32}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 8.27801	average time = 0.00827801
+COL keywords:3%  querykey:2-{28,33}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 29.3152	average time = 0.0293152
+COL keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: weight
+---------------------------------------
+
+GLAD : totol time = 27.9081	average time = 0.0279081
+COL keywords:3%  querykey:10-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 109.728	average time = 0.109728
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 108.349	average time = 0.108349
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 173.835	average time = 0.173835
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 169.699	average time = 0.169699
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 634.474	average time = 0.634474
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 649.048	average time = 0.649048
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 66.3648	average time = 0.663648
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 64.9807	average time = 0.649807
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 45.6319	average time = 0.0456319
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
+GLAD : totol time = 47.7677	average time = 0.0477677
+COL keywords:6%  querykey:6-{6,18,24,33,46,2,34,25,47,19}  Dis:0~20% Path generation: enum
+---------------------------------------
+
